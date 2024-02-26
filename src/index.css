@@ -6,6 +6,7 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   height: 100vh;
+  text-align: center;
 
 }
 .btn{
@@ -15,24 +16,71 @@ body {
 
 .container-1{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  
+  align-items: center;
+  
+  height: 100%;
   width: 100vw;
+  
 }
 
-.container-1-child1, .container-1-child2, .container-1-child3{
+ .container-1-child1{
+  border-radius: 10px;
   background-color: #D0EBF2;
-  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
-.container-1-child1, .container-1-child3{
-  width: 129px;
-  height: 127px;
-
+.container-1 .container-1-child1{
+  width: 50%;
+  height: 424px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  
 }
 
 .container-1-child2{
+  background-color: #D0EBF2;
+  border-radius: 10px;
+
+  height: 30px;
   width: 50%;
-  height: 424px;
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tudoVideo{
+  width: 40%;
+  height: 200px;
+  margin-bottom: 50px;
+  
+  border-radius: 10%;
+}
+
+.btn{
+  background: none;
+  border: none;
+
+}
+.btn-2{
+  
+  width: 129px;
+  height: 127px;
+}
+
+.btn-2{
+  background-color: rgb(255, 255, 255);
+  width: 129px;
+  height: 119px;
+  border-radius: 10%;
+
 }
 

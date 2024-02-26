@@ -1,4 +1,6 @@
-import iconMusic from './assets/musicIcon.png'
+import iconPlay from './assets/play.png'
+import iconPlus from './assets/plus.png'
+import iconFullScreen from './assets/fullScreen.png'
 import logo from './assets/logo2.png';
 import './App.css';
 
@@ -13,15 +15,17 @@ function App() {
 
       <div className='container-1'>
         <div className='container-1-child1'>
-          <button className='btn'><img src={iconMusic} alt="icone de musica"/> </button>
-
+          <div className='tudoVideo'>
+            <button className='btn btn-2'><img src={iconPlus} alt="icone de musica"/> </button>
+            <p>Clique aqui para carregar</p>
+            <p>Ou arraste e solte um arquivo aqui</p>
+          </div>
         </div>
         <div className='container-1-child2'>
-          <button><img src={iconMusic} alt="icone de musica"/> </button>
-          <p>Clique aqui para carregar</p>
-        </div>
-        <div className='container-1-child3'>
-        <button><img src={iconMusic} alt="icone de musica"/> </button>
+          <button className='btn'><img src={iconPlay} alt="icone de musica"/> </button>
+          <p>00:00:00:00</p>
+          <button className='btn'><img src={iconFullScreen} alt="icone de musica"/> </button>
+          
         </div>
         
       </div>
