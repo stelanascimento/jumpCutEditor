@@ -22,7 +22,7 @@ function App() {
 
     const fd = new FormData();
     for(let i = 0; i<files.length; i++){
-      fd.append(file${i+1}, files[i])
+      fd.append(files[i+1], files[i])
     }
 
     setMsg("Uploading ...");
@@ -78,14 +78,14 @@ function App() {
   return (
     
     <div className="App">
-      <div className='initial-screen'>
+      {/* <div className='initial-screen'>
         <div className='box-1'>
           <h1>JumpCut Smart Editor</h1>
           <p>Transformando sua visão em realidade,\<br />um corte de cada vez.</p>
           <button>Editar Agora</button>
         </div>
         <img src={logo} className="logo-initial-screen" alt="logo" />
-      </div>
+      </div> */}
 
       <div className='header'>
         <img src={logo} className="App-logo" alt="logo" />
@@ -95,13 +95,10 @@ function App() {
       <div className='container-1'>
         <div className='container-1-child1'>
           <div className='tudoVideo'>
-            <button className='btn btn-2'>
-              <img src={iconPlus} alt="icone de musica"/>
-              <input  className="btn" onChange={ (e) => {setFiles(e.target.files)   }} type='file' multiple></input>
-               </button>
             <p className='text'>Clique aqui para carregar</p>
+            <input  className="btn" onChange={ (e) => {setFiles(e.target.files)   }} type='file' multiple></input>
             <p>Ou arraste e solte um arquivo aqui</p>
-            <button onClick={handleUpload}  className=' btn btn-upload'>Upload</button>
+            <button onClick={handleUpload}  className='btn-upload'>Upload</button>
           </div>
           {progress.started &&<progress max="100" value={progress.pc}></progress>}
           {msg && <span>{msg}</span>}
