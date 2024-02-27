@@ -52,6 +52,8 @@ function App() {
   //     console.error(err);
   //   });
 
+  //oi
+
     axios.post('http://httpbin.org/post', fd, {
       onUploadProgress: (progressEvent) => { setProgress(prevState => {
         return{ ...prevState, pc: progressEvent.progress*100 }
