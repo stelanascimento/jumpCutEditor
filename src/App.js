@@ -1,5 +1,5 @@
 import iconPlay from './assets/play.png'
-import iconPlus from './assets/plus.png'
+// import iconPlus from './assets/plus.png'
 import iconFullScreen from './assets/fullScreen.png'
 import logo from './assets/logo2.png';
 import './App.css';
