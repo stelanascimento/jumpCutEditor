@@ -107,8 +107,8 @@ body {
   height: 30px;
   font-size: 17px;
   color: white;
-  background: none;
   border: none;
+  cursor: pointer;
 }
 
 .btn-play{
